@@ -1,6 +1,5 @@
-fastapi
-uvicorn
-jose
+fastapi 
+uvicorn 
+python-jose[cryptography] 
+passlib[bcrypt] 
 sqlalchemy
-pydantic
-passlib
