@@ -3,3 +3,4 @@ uvicorn
 python-jose[cryptography] 
 passlib[bcrypt] 
 sqlalchemy
+streamlit

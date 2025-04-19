@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 from fastapi import FastAPI, Depends, HTTPException, status
-import uvicorn
 from fastapi.middleware.cors import CORSMiddleware
 from db import Base, engine, SessionLocal, get_db
 from fastapi.security import  OAuth2PasswordRequestForm
