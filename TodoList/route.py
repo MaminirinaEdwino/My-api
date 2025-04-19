@@ -17,7 +17,7 @@ async def get_TodoList_by_id(id: int, db: Session = Depends(get_db)):
 	db_TodoList = db.query(TodoList).filter(TodoList.id == id).first()
 	if not db_TodoList:
 		raise HTTPException(status_code=404, detail="TodoList not found")
-	return TodoList
+	return db_TodoList
 
 @TodoList_router.post("/")
 async def create_TodoList(TodoList_post: TodoList_create, db: Session = Depends(get_db)):
